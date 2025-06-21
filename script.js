@@ -74,3 +74,7 @@ $(document).ready(function () {
     }
 
 });
+    // Allow only digits in the phone input
+    $('#phone').on('input', function () {
+        this.value = this.value.replace(/\D/g, '');
+    });
